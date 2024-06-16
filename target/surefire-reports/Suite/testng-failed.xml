@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="anirudhBase.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Stand ALone Test(failed)" verbose="0">
+    <classes>
+      <class name="anirudh.Tests.standAlonetest">
+        <methods>
+          <include name="Over"/>
+          <include name="launchApplication"/>
+          <include name="OrderHistory"/>
+          <include name="Testing" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- anirudh.Tests.standAlonetest -->
+    </classes>
+  </test> <!-- Stand ALone Test(failed) -->
+  <test thread-count="5" name="Error Valid Test(failed)" verbose="0">
+    <classes>
+      <class name="anirudh.Tests.errorValidation">
+        <methods>
+          <include name="Tstng"/>
+          <include name="Over"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- anirudh.Tests.errorValidation -->
+    </classes>
+  </test> <!-- Error Valid Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
